@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" 
+  href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" 
+  integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" 
+  crossorigin="" />
+
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" 
+  integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" 
+  crossorigin=""></script>
+
+  <title>Frontend Mentor | IP Address Tracker</title>
+  
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+
+<link rel="stylesheet" href="src/css/style.css">
+  
+</head>
+<body>
+
+  <div class="bg-map"></div>
+    <div class="map" id="map"></div>
+  <div class="data">
+    <h1 class="title">IP Address Tracker</h1>
+    <div class="search">
+      <input type="text" id="ip" placeholder="Search for any IP address or domain">
+      <button id="submit">
+        <img src="./images/right-svgrepo-com.svg" alt="">
+      </button>
+    </div>
+    <div class="about-ip">
+      <div>
+        <h3 class="subtitle">IP address</h3>
+        <p class="result" id="ip-r">192.212.174.101</p>
+      </div>
+      <div>
+        <h3 class="subtitle">Location</h3>
+        <p class="result" id="location-r">-</p>
+      </div>
+      <div>
+        <h3 class="subtitle">Timezone</h3>
+        <p class="result" id="timezone-r">-</p>
+      </div>
+      <div>
+        <h3 class="subtitle">ISP</h3>
+        <p class="result" id="isp-r">-</p>
+      </div>
+    </div>
+  </div>
+
+  IP Address Tracker
+
+  Search for any IP address or domain
+  
+  IP Address
+  Location
+  Timezone
+    UTC <!-- add offset value dynamically using the API -->
+  ISP
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  
+  <script src="./src/js/index.js"></script>
+</body>
+</html>
